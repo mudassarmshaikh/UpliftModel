@@ -42,16 +42,16 @@ def visualize_confidence_level(prediction):
     for tick in vals:
         ax.axvline(x=tick, linestyle='dashed', alpha=0.4, color='#eeeeee', zorder=1)
 
-    ax.set_xlabel("Conversion Probability", labelpad=2, weight='bold', size=12)
-    ax.set_ylabel("Uplift", labelpad=10, weight='bold', size=12)
-    ax.set_title('Prediction Confidence Level ', fontdict=None, loc='center', pad=None, weight='bold')
+    ax.set_xlabel("Winning Chances", labelpad=2, weight='bold', size=12)
+    ax.set_ylabel("Zobia", labelpad=10, weight='bold', size=12)
+    ax.set_title('Zobia Winning Chances ', fontdict=None, loc='center', pad=None, weight='bold')
 
     st.pyplot()
     return
 
 st.write("""
-# Customer Uplift Prescription 
-This app suggests the ** Probability of uplift **  using **Criteo dataset** input via the **side panel** 
+# Zobia Winning Chances 
+Toggle side-bar panel to observe chances of **Zobia** winning 
 """)
 
 #read in wine image and render with streamlit
@@ -66,18 +66,18 @@ def get_user_input():
     this function is used to get user input using sidebar slider and selectbox 
     return type : pandas dataframe
     """
-    f0  = st.sidebar.slider("Feature 0", 0, 40, 20)
-    f1  = st.sidebar.slider('Feature 1', 0, 20, 10)
-    f2  = st.sidebar.slider('Feature 2', 0, 20, 10)
-    f3  = st.sidebar.slider('Feature 3', -20, 20, 0)
-    f4  = st.sidebar.slider('Feature 4', 0, 40, 10)
-    f5  = st.sidebar.slider('Feature 5', -20, 20, 0)
-    f6  = st.sidebar.slider('Feature 6', -40, 20, 0)
-    f7  = st.sidebar.slider('Feature 7', 0, 20, 10)
-    f8  = st.sidebar.slider('Feature 8', 0, 20, 5)
-    f9  = st.sidebar.slider('Feature 9', 0, 80, 20)
-    f10 = st.sidebar.slider('Feature 10', 0, 20, 10)
-    f11 = st.sidebar.slider('Feature 11', -10, 20, 0)
+    f0  = st.sidebar.slider("Confidence", 0, 40, 20)
+    f1  = st.sidebar.slider('Focus', 0, 20, 10)
+    f2  = st.sidebar.slider('Hustle', 0, 20, 10)
+    f3  = st.sidebar.slider('Patience', -20, 20, 0)
+    f4  = st.sidebar.slider('Persistence', 0, 40, 10)
+    f5  = st.sidebar.slider('Science', -20, 20, 0)
+    f6  = st.sidebar.slider('Math', -40, 20, 0)
+    f7  = st.sidebar.slider('Resilience', 0, 20, 10)
+    f8  = st.sidebar.slider('General Knowledge', 0, 20, 5)
+    f9  = st.sidebar.slider('Sports', 0, 80, 20)
+    f10 = st.sidebar.slider('Lethargy', 0, 20, 10)
+    f11 = st.sidebar.slider('Distractions', -10, 20, 0)
 
     features = {'f0': f0,
             'f1': f1,
