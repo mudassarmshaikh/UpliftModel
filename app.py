@@ -26,7 +26,7 @@ def visualize_confidence_level(prediction):
     """
     data = (prediction[0]*100).round(2)
     #grad_percentage = pd.DataFrame(data = data,columns = ['Percentage'],index = ['Low','Ave','High'])
-    grad_percentage = pd.DataFrame(data = data,columns = ['Percentage'],index = ['Uplift'])
+    grad_percentage = pd.DataFrame(data = data,columns = ['Percentage'],index = ['Chances'])
     ax = grad_percentage.plot(kind='barh', figsize=(7, 4), color='#722f37', zorder=10, width=0.5)
     ax.legend().set_visible(False)
     ax.set_xlim(xmin=0, xmax=100)
