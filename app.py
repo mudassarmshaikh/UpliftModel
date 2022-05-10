@@ -72,10 +72,10 @@ def get_user_input():
     f3  = st.sidebar.slider('Patience', -20, 20, 0)
     f4  = st.sidebar.slider('Persistence', 0, 40, 10)
     f5  = st.sidebar.slider('Science', -20, 20, 0)
-    f6  = st.sidebar.slider('Math', -40, 20, 0)
+    f6  = st.sidebar.slider('General Knowledge', -40, 20, 0)
     f7  = st.sidebar.slider('Resilience', 0, 20, 10)
-    f8  = st.sidebar.slider('General Knowledge', 0, 20, 5)
-    f9  = st.sidebar.slider('Sports', 0, 80, 20)
+    f8  = st.sidebar.slider('Sports', 0, 20, 5)
+    f9  = st.sidebar.slider('Mathematics', 0, 80, 20)
     f10 = st.sidebar.slider('Lethargy', 0, 20, 10)
     f11 = st.sidebar.slider('Distractions', -10, 20, 0)
 
