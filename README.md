@@ -4,4 +4,4 @@
 
 *Uplift modeling is an important yet novel area of research in machine learning which aims to explain and to estimate the causal impact of a treatment at the individual level.*
 
-![TreatmentvsResponse](/uplift-treatmentvsresponse.jpg)
+![TreatmentvsResponse](/uplift-treatmentvsresponse.jpg | width=100)
