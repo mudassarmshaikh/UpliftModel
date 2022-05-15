@@ -38,7 +38,7 @@ The data was provided by AI lab of Criteo (French advertising company that provi
 
 Each instance has 12 features that were anonymized plus a treatment variable and two target variables (visits and conversion). There is another extra variable called "exposure" which indicates whether the user was effectively exposed to the treatment. The dataset consists of 13M rows, each one representing a user with 12 features, a treatment indicator and 2 binary labels (visits and conversions). Positive labels mean the user visited/converted on the advertiser website during the test period (2 weeks). The global treatment ratio is 84.6%. It is usual that advertisers keep only a small control population as it costs them in potential revenue. Following is a detailed description of the features:
 
-_ f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11: feature values (dense, float)
+- f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11: feature values (dense, float)
 - treatment: treatment group (1 = treated, 0 = control)
 - conversion: whether a conversion occurred for this user (binary, label)
 - visit: whether a visit occurred for this user (binary, label)
