@@ -27,3 +27,22 @@ The goal of uplift modeling, also known as net lift or incremental response mode
 - and avoid bothering “sleeping dogs”, or those who would react negatively to the treatment, if they exist.
 
 Let's generate a model that can identify users that are more likely to convert (or buy the product) and avoid the ones that are not.
+
+### Uplift modeling using Advertising Data
+We are working with a dataset that is constructed by assembling data resulting from several incrementality tests, a particular randomized trial procedure where a random part of the population is prevented from being targeted by advertising. It consists of 13M rows, each one representing a user with 11 features, a treatment indicator and 2 labels (visits and conversions).
+
+Dataset source https://ailab.criteo.com/criteo-uplift-prediction-dataset/
+The dataset is a collection of 13 million samples from a randomized control trial, scaling up previously available datasets by a healthy 590x factor.
+The data was provided by AI lab of Criteo (French advertising company that provides online display advertisements). The data contains 13 million instances from a randomized control trial collected in two weeks, where 84.6% of the users where sent the treatment.
+
+Each instance has 12 features that were anonymized plus a treatment variable and two target variables (visits and conversion). There is another extra variable called "exposure" which indicates whether the user was effectively exposed to the treatment. The dataset consists of 13M rows, each one representing a user with 12 features, a treatment indicator and 2 binary labels (visits and conversions). Positive labels mean the user visited/converted on the advertiser website during the test period (2 weeks). The global treatment ratio is 84.6%. It is usual that advertisers keep only a small control population as it costs them in potential revenue. Following is a detailed description of the features:
+
+_ f0, f1, f2, f3, f4, f5, f6, f7, f8, f9, f10, f11: feature values (dense, float)
+- treatment: treatment group (1 = treated, 0 = control)
+- conversion: whether a conversion occurred for this user (binary, label)
+- visit: whether a visit occurred for this user (binary, label)
+- exposure: treatment effect, whether the user has been effectively exposed (binary)
+
+**There are two target variables (visits and conversion), this notebook will only focus on the conversion variable, which can be understood as the indicator whether the user bought the product.
+The goal is to generate a model that can identify users that are more likely to convert (or buy the product) and avoid the ones that are not.**
+
