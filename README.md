@@ -44,6 +44,6 @@ Each instance has 12 features that were anonymized plus a treatment variable and
 - visit: whether a visit occurred for this user (binary, label)
 - exposure: treatment effect, whether the user has been effectively exposed (binary)
 
-**There are two target variables (visits and conversion), this notebook will only focus on the conversion variable, which can be understood as the indicator whether the user bought the product.
+**There are two target variables (visits and conversion), this project will only focus on the conversion variable, which can be understood as the indicator whether the user bought the product.
 The goal is to generate a model that can identify users that are more likely to convert (or buy the product) and avoid the ones that are not.**
 
