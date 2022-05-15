@@ -47,3 +47,14 @@ Each instance has 12 features that were anonymized plus a treatment variable and
 **There are two target variables (visits and conversion), this project will only focus on the conversion variable, which can be understood as the indicator whether the user bought the product.
 The goal is to generate a model that can identify users that are more likely to convert (or buy the product) and avoid the ones that are not.**
 
+# scikit-uplift
+
+**scikit-uplift (sklift) is an uplift modeling python package that provides fast sklearn-style models implementation, evaluation metrics and visualization tools.
+The main idea is to provide easy-to-use and fast python package for uplift modeling. It delivers the model interface with the familiar scikit-learn API. One can use any popular estimator (for instance, from the Catboost library).
+Uplift modeling estimates a causal effect of treatment and uses it to effectively target customers that are most likely to respond to a marketing campaign.**
+
+## Implementing Two Model Approach
+The main idea is to estimate the conditional probabilities of the treatment and control groups separately.
+- Train the first model using the treatment set.
+- Train the second model using the control set.
+- Inference: subtract the control model scores from the treatment model scores.
