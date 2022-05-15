@@ -51,7 +51,7 @@ def visualize_confidence_level(prediction):
 
 st.write("""
 # Customer Uplift Prescription 
-This app suggests the ** Probability of uplift **  using **Criteo dataset** input via the **side panel** 
+This app suggests the **Probability of conversion**  using **Criteo dataset** input via the **side panel** 
 """)
 
 #read in wine image and render with streamlit
