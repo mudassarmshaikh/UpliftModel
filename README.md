@@ -4,7 +4,7 @@
 
 *Uplift modeling is an important yet novel area of research in machine learning which aims to explain and to estimate the causal impact of a treatment at the individual level.*
 <p align="center">
-  <img src="/uplift-treatmentvsresponse.jpg" width="450" height="400">
+  <img src="/uplift-treatmentvsresponse.jpg" width="500" height="400">
  </p>
 
 In the digital advertising industry, the treatment is exposure to different ads and uplift modeling is used to direct marketing efforts towards users for whom it is the most efficient. One of the main applications of the Machine Learning models is to improve Targeted Marketing. Targeted Marketing is used to select the customers that most likely buy a product.
