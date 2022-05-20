@@ -93,7 +93,7 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 [Train the model using scikit-uplift Two Model approach and save the model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Campaign%20Conversion%20Target%20-%20Uplift%20Model.ipynb)
 
 # Model API is hosted on *www.pythonanywhere.com*
-[View Source Code on *www.pythonAnywhere.com*](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
+[View Source Code](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
 
 Test on Windows Command Line using the following command
 
@@ -108,5 +108,6 @@ Alternatively, use the Postman app to send a POST request to https://mudassarsha
 Response will be 0.966166783547662, which translates to high uplift probability for a customer with these features.
 
 # Streamlit Web App is hosted on *streamlit.io*
+[View Source Code](https://github.com/mudassarmshaikh/UpliftModel/blob/main/app.py)
 [Click the Link to run the app on streamlit.io](https://share.streamlit.io/mudassarmshaikh/upliftmodel/main/app.py)
 
