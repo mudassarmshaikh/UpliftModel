@@ -62,8 +62,9 @@ The following models were compared and it was concluded that *Logistic regressio
 - Logistic Regression. *Qini coefficient on full data: 0.6627*
 
 ## [Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Modeling%20-%20Logistic%20Regression%20-%20Hyperparameter%20Tuning%20v2.ipynb)
-Hyperparameter Tuning efforts yielded increase in Qini coefficient for the following parameters
+Hyperparameter Tuning yield an increase in Qini coefficient for the following parameters
 - C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 ------> 0.7089
+
 Other parameters tested were :
 - C= 1, penalty= 'l1', solver= 'liblinear' -------> 0.6629
 - C= 0.01, penalty= 'l1', solver= 'saga ---------> 0.6692
@@ -72,12 +73,15 @@ Other parameters tested were :
 - C= 0.0001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 -------> 0.7060
 - C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.01 ----> 0.7076
 
-
 # scikit-uplift
 
 **scikit-uplift (sklift) is an uplift modeling python package that provides fast sklearn-style models implementation, evaluation metrics and visualization tools.
 The main idea is to provide easy-to-use and fast python package for uplift modeling. It delivers the model interface with the familiar scikit-learn API. One can use any popular estimator (for instance, from the Catboost library).
 Uplift modeling estimates a causal effect of treatment and uses it to effectively target customers that are most likely to respond to a marketing campaign.**
+
+## [scikit-uplift model compared for Solo Model, Class Transformation and Two Model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Model%20-%20Criteo%20Advertising%20(Final).ipynb)
+
+**It was conluded that the Two Model approach yields the highest uplift.**
 
 ## Implementing Two Model Approach
 The main idea is to estimate the conditional probabilities of the treatment and control groups separately.
@@ -85,6 +89,14 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 - Train the second model using the control set.
 - Inference: subtract the control model scores from the treatment model scores.
 
-# Train the Model
+# Model Training
+[Train the model using scikit-uplift Two Model approach and save the model] (https://github.com/mudassarmshaikh/UpliftModel/blob/main/Campaign%20Conversion%20Target%20-%20Uplift%20Model.ipynb)
 
-# Host API to test with Postman
+# Model API is hosted on *Pythonanywhere*
+[Source Code](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
+
+Test on Windows Command Line using the following command
+curl -X POST -H "Content-Type:application/json; format=pandas-split" --data "{\"data\":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,	1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]}" --ssl-no-revoke https://mudassarshaikh.pythonanywhere.com/predict
+
+
+
