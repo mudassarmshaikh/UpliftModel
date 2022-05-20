@@ -97,13 +97,13 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 
 Test on Windows Command Line using the following command
 
-curl -X POST -H "Content-Type:application/json; format=pandas-split" --data "{\"data\":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,	1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]}" --ssl-no-revoke https://mudassarshaikh.pythonanywhere.com/predict
+*curl -X POST -H "Content-Type:application/json; format=pandas-split" --data "{\"data\":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,	1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]}" --ssl-no-revoke https://mudassarshaikh.pythonanywhere.com/predict*
 
 Alternatively, use the Postman app to send a POST request to https://mudassarshaikh.pythonanywhere.com/predict with the following data in body
 
-{
+*{
     "data":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]
-}
+}*
 
 Response will be 0.966166783547662, which translates to high uplift probability for a customer with these features.
 
