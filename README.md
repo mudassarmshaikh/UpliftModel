@@ -1,4 +1,4 @@
-# Campaign Conversion Target with Uplift Modeling
+# Campaign Conversion Uplift Probability
 
 ### Uplift modeling, also known as incrementality modeling or persuasion modeling, models the causal effect of a treatment on the outcome for different individuals. Uplift modeling has been widely applied in marketing, personalized medicine, and political elections, scenarios in which you don’t simply want to predict an outcome, but predict how that outcome might change with respect to a treatment.
 
@@ -32,7 +32,6 @@ Let's generate a model that can identify users that are more likely to convert (
 We are working with a dataset that is constructed by assembling data resulting from several incrementality tests, a particular randomized trial procedure where a random part of the population is prevented from being targeted by advertising. It consists of 13M rows, each one representing a user with 11 features, a treatment indicator and 2 labels (visits and conversions).
 
 Dataset is available at https://ailab.criteo.com/criteo-uplift-prediction-dataset/
-Download and host the file http://go.criteo.net/criteo-research-uplift-v2.1.csv.gz
 
 The dataset is a collection of 13 million samples from a randomized control trial, scaling up previously available datasets by a healthy 590x factor.
 The data was provided by AI lab of Criteo (French advertising company that provides online display advertisements). The data contains 13 million instances from a randomized control trial collected in two weeks, where 84.6% of the users where sent the treatment.
@@ -48,6 +47,13 @@ Each instance has 12 features that were anonymized plus a treatment variable and
 **There are two target variables (visits and conversion), this project will only focus on the conversion variable, which can be understood as the indicator whether the user bought the product.
 The goal is to generate a model that can identify users that are more likely to convert (or buy the product) and avoid the ones that are not.**
 
+
+**Download and host the dataset in your environment** http://go.criteo.net/criteo-research-uplift-v2.1.csv.gz
+
+# Run the Jupyter notebook to perform EDA.
+
+# Hyperparameter Tuning
+
 # scikit-uplift
 
 **scikit-uplift (sklift) is an uplift modeling python package that provides fast sklearn-style models implementation, evaluation metrics and visualization tools.
@@ -59,3 +65,7 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 - Train the first model using the treatment set.
 - Train the second model using the control set.
 - Inference: subtract the control model scores from the treatment model scores.
+
+# Train the Model
+
+# Host API to test with Postman
