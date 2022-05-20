@@ -31,7 +31,8 @@ Let's generate a model that can identify users that are more likely to convert (
 ### Uplift modeling using Advertising Data
 We are working with a dataset that is constructed by assembling data resulting from several incrementality tests, a particular randomized trial procedure where a random part of the population is prevented from being targeted by advertising. It consists of 13M rows, each one representing a user with 11 features, a treatment indicator and 2 labels (visits and conversions).
 
-Dataset source https://ailab.criteo.com/criteo-uplift-prediction-dataset/.
+Dataset is available at https://ailab.criteo.com/criteo-uplift-prediction-dataset/
+Download and host the file http://go.criteo.net/criteo-research-uplift-v2.1.csv.gz
 
 The dataset is a collection of 13 million samples from a randomized control trial, scaling up previously available datasets by a healthy 590x factor.
 The data was provided by AI lab of Criteo (French advertising company that provides online display advertisements). The data contains 13 million instances from a randomized control trial collected in two weeks, where 84.6% of the users where sent the treatment.
