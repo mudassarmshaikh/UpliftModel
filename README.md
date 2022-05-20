@@ -105,6 +105,8 @@ Alternatively, use the Postman app to send a POST request to https://mudassarsha
     "data":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]
 }
 
+Response will be 0.966166783547662, which translates to high uplift probability for a customer with these features.
+
 # Streamlit Web App is hosted on *streamlit.io*
 [Click the Link to run the app on streamlit.io](https://share.streamlit.io/mudassarmshaikh/upliftmodel/main/app.py)
 
