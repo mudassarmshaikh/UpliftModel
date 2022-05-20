@@ -79,9 +79,9 @@ Other parameters tested were :
 The main idea is to provide easy-to-use and fast python package for uplift modeling. It delivers the model interface with the familiar scikit-learn API. One can use any popular estimator (for instance, from the Catboost library).
 Uplift modeling estimates a causal effect of treatment and uses it to effectively target customers that are most likely to respond to a marketing campaign.**
 
-## [scikit-uplift model compared for Solo Model, Class Transformation and Two Model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Model%20-%20Criteo%20Advertising%20(Final).ipynb)
+### [scikit-uplift model compared for Solo Model, Class Transformation and Two Model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Model%20-%20Criteo%20Advertising%20(Final).ipynb)
 
-**It was conluded that the Two Model approach yields the highest uplift.**
+**It was concluded that the Two Model approach yields the highest uplift.**
 
 ## Implementing Two Model Approach
 The main idea is to estimate the conditional probabilities of the treatment and control groups separately.
@@ -90,10 +90,10 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 - Inference: subtract the control model scores from the treatment model scores.
 
 # Model Training
-[Train the model using scikit-uplift Two Model approach and save the model] (https://github.com/mudassarmshaikh/UpliftModel/blob/main/Campaign%20Conversion%20Target%20-%20Uplift%20Model.ipynb)
+[Train the model using scikit-uplift Two Model approach and save the model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Campaign%20Conversion%20Target%20-%20Uplift%20Model.ipynb)
 
 # Model API is hosted on *Pythonanywhere*
-[Source Code](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
+[View Source Code on *PythonAnywhere*](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
 
 Test on Windows Command Line using the following command
 curl -X POST -H "Content-Type:application/json; format=pandas-split" --data "{\"data\":[[-1.205656, -0.154119, -0.154996, 0.496826, 20.333346, 0.264136,	1.016531, -0.290197, -4.038440, 5.143014, 1.144352, -30.414533]]}" --ssl-no-revoke https://mudassarshaikh.pythonanywhere.com/predict
