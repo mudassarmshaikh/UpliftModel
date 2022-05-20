@@ -52,7 +52,26 @@ The goal is to generate a model that can identify users that are more likely to 
 
 ## Run the [Jupyter notebook to perform EDA](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Modeling.ipynb).
 
-## Hyperparameter Tuning
+## [Model Comparison](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Criteo%20Uplift%20-%20Model%20Comparison.ipynb)
+The following models were compared and it was concluded that *Logistic regression* shows maximum Qini coefficient on full data: 0.6627, and Qini curve closest to ideal. 
+- XGBoost. *Qini coefficient on full data: 0.5466*
+- LightGBM. *Qini coefficient on full data: 0.4719*
+- CatBoost. *Qini coefficient on full data: 0.5350*
+- Decision Tree Classifier. *Qini coefficient on full data: 0.0857*
+- Random Forest Classifier. *Qini coefficient on full data: 0.5412*
+- Logistic Regression. *Qini coefficient on full data: 0.6627*
+
+## [Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Modeling%20-%20Logistic%20Regression%20-%20Hyperparameter%20Tuning%20v2.ipynb)
+Hyperparameter Tuning efforts yielded increase in Qini coefficient for the following parameters
+- C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 ------> 0.7089
+Other parameters tested were :
+- C= 1, penalty= 'l1', solver= 'liblinear' -------> 0.6629
+- C= 0.01, penalty= 'l1', solver= 'saga ---------> 0.6692
+- C= 0.0001, penalty= 'l2', solver= 'saga' ------> 0.6840
+- C= 0.00001, penalty= 'l2', solver= 'saga' ----> 0.6998
+- C= 0.0001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 -------> 0.7060
+- C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.01 ----> 0.7076
+
 
 # scikit-uplift
 
