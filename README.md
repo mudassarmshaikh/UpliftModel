@@ -108,6 +108,8 @@ Alternatively, use the Postman app to send a POST request to https://mudassarsha
 Response will be 0.966166783547662, which translates to high uplift probability for a customer with these features.
 
 # Streamlit Web App is hosted on *streamlit.io*
+
 [View Source Code](https://github.com/mudassarmshaikh/UpliftModel/blob/main/app.py)
+
 [Click the Link to run the app on streamlit.io](https://share.streamlit.io/mudassarmshaikh/upliftmodel/main/app.py)
 
