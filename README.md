@@ -50,7 +50,7 @@ The goal is to generate a model that can identify users that are more likely to 
 
 **Download and host the dataset in your environment** http://go.criteo.net/criteo-research-uplift-v2.1.csv.gz
 
-## Run the Jupyter notebook to perform [EDA](https://github.com/mudassarmshaikh/UpliftModel/commit/52d996ddb394510432784d99d2d60b9b5dff9ae6).
+## Run the [Jupyter notebook to perform EDA](https://github.com/mudassarmshaikh/UpliftModel/commit/52d996ddb394510432784d99d2d60b9b5dff9ae6).
 
 ## Hyperparameter Tuning
 
