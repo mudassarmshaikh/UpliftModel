@@ -83,7 +83,7 @@ Other parameters tested were :
 The main idea is to provide easy-to-use and fast python package for uplift modeling. It delivers the model interface with the familiar scikit-learn API. One can use any popular estimator (for instance, from the Catboost library).
 Uplift modeling estimates a causal effect of treatment and uses it to effectively target customers that are most likely to respond to a marketing campaign.**
 
-### [scikit-uplift model compared for Solo Model, Class Transformation and Two Model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Model%20-%20Criteo%20Advertising%20(Final).ipynb)
+### [scikit-uplift model compared for Solo Model, Class Transformation and Two Model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/scikit-uplift%20model%20comparison%20-%20Solo%20-%20CT%20-%20TwoModel.ipynb)
 
 **It was concluded that the Two Model approach yields the highest uplift.**
 
