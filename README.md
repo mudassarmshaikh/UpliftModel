@@ -52,6 +52,8 @@ The goal is to generate a model that can identify users that are more likely to 
 
 ## Run the [Jupyter notebook to perform EDA](https://github.com/mudassarmshaikh/UpliftModel/blob/main/EDA.ipynb).
 
+### [Reference Baseline Model using LGBM](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Reference%20Baseline%20-%20Uplift%20Modeling%20-%20Criteo_dataset.ipynb)
+
 ## [Model Comparison](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Model%20Comparison.ipynb)
 The following models were compared and it was concluded that *Logistic regression* shows maximum Qini coefficient on full data: 0.6627, and Qini curve closest to ideal. 
 - XGBoost. *Qini coefficient on full data: 0.5466*
