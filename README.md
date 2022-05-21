@@ -50,9 +50,9 @@ The goal is to generate a model that can identify users that are more likely to 
 
 **Download and host the dataset in your environment** http://go.criteo.net/criteo-research-uplift-v2.1.csv.gz
 
-## Run the [Jupyter notebook to perform EDA](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Modeling.ipynb).
+## Run the [Jupyter notebook to perform EDA](https://github.com/mudassarmshaikh/UpliftModel/blob/main/EDA.ipynb).
 
-## [Model Comparison](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Criteo%20Uplift%20-%20Model%20Comparison.ipynb)
+## [Model Comparison](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Model%20Comparison.ipynb)
 The following models were compared and it was concluded that *Logistic regression* shows maximum Qini coefficient on full data: 0.6627, and Qini curve closest to ideal. 
 - XGBoost. *Qini coefficient on full data: 0.5466*
 - LightGBM. *Qini coefficient on full data: 0.4719*
@@ -61,7 +61,7 @@ The following models were compared and it was concluded that *Logistic regressio
 - Random Forest Classifier. *Qini coefficient on full data: 0.5412*
 - Logistic Regression. *Qini coefficient on full data: 0.6627*
 
-## [Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Uplift%20Modeling%20-%20Logistic%20Regression%20-%20Hyperparameter%20Tuning%20v2.ipynb)
+## [Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression.ipynb)
 Hyperparameter Tuning yield an increase in Qini coefficient for the following parameters
 - C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 ------> 0.7089
 
