@@ -61,8 +61,10 @@ The following models were compared and it was concluded that *Logistic regressio
 - Random Forest Classifier. *Qini coefficient on full data: 0.5412*
 - Logistic Regression. *Qini coefficient on full data: 0.6627*
 
-## [Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression.ipynb)
-Hyperparameter Tuning yield an increase in Qini coefficient for the following parameters
+## Hyperparameter Tuning 
+[Hyperparameter Tuning using GridSearchCV](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression%20-%20GridSearchCV.ipynb)
+
+[Manual Hyperparameter Tuning] (https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression.ipynb) yield an increase in Qini coefficient for the following parameters
 - C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 ------> 0.7089
 
 Other parameters tested were :
