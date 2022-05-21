@@ -64,7 +64,7 @@ The following models were compared and it was concluded that *Logistic regressio
 ## Hyperparameter Tuning 
 [Hyperparameter Tuning using GridSearchCV](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression%20-%20GridSearchCV.ipynb)
 
-[Manual Hyperparameter Tuning] (https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression.ipynb) yield an increase in Qini coefficient for the following parameters
+[Manual Hyperparameter Tuning](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Hyperparameter%20Tuning%20-%20Logistic%20Regression.ipynb) yield an increase in Qini coefficient for the following parameters
 - C= 0.00001, penalty= 'elasticnet', solver= 'saga', l1_ratio=0.1 ------> 0.7089
 
 Other parameters tested were :
@@ -92,7 +92,7 @@ The main idea is to estimate the conditional probabilities of the treatment and 
 - Inference: subtract the control model scores from the treatment model scores.
 
 # Model Training
-[Train the model using scikit-uplift Two Model approach and save the model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Campaign%20Conversion%20Target%20-%20Uplift%20Model.ipynb)
+[Train the model using scikit-uplift Two Model approach and save the model](https://github.com/mudassarmshaikh/UpliftModel/blob/main/Train%20Uplift%20Model.ipynb)
 
 # Model API is hosted on *www.pythonanywhere.com*
 [View Source Code](https://www.pythonanywhere.com/user/mudassarshaikh/shares/c9f5baf49261480ab53609d2434a11f5/)
