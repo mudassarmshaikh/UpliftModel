@@ -1,0 +1,6 @@
+1) Create API script api.py to serve model results as API
+2) Publish https://github.com/mudassarmshaikh/UpliftModel/blob/main/api.py to www.pythonanywhere.com
+3) Upload model.pkl file to www.pythonanywhere.com
+4) Create Web App API on www.pythonanywhere.com to serve model predictions
+5) Create Streamlit app https://github.com/mudassarmshaikh/UpliftModel/blob/main/app.py to show Uplift Probability on feature value selection.
+6) Publish streamlit app to streamlit.io 
